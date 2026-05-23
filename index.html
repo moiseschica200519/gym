@@ -24,201 +24,60 @@
             box-shadow: 0 8px 20px rgba(0,0,0,0.05);
             padding: 20px 24px;
             margin-bottom: 24px;
-            transition: all 0.2s;
         }
-        h1, h2, h3 {
-            margin-top: 0;
-            color: #1e293b;
-        }
-        h1 {
-            font-size: 1.8rem;
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-        .badge {
-            background: #3b82f6;
-            color: white;
-            padding: 6px 14px;
-            border-radius: 40px;
-            font-size: 0.85rem;
-            font-weight: 500;
-        }
+        h1, h2, h3 { margin-top: 0; color: #1e293b; }
+        h1 { font-size: 1.8rem; display: flex; align-items: center; gap: 12px; flex-wrap: wrap; justify-content: space-between; }
+        .badge { background: #3b82f6; color: white; padding: 6px 14px; border-radius: 40px; font-size: 0.85rem; }
         .user-info {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            background: #f8fafc;
-            padding: 12px 16px;
-            border-radius: 20px;
-            margin-bottom: 16px;
-            font-size: 0.95rem;
+            display: flex; flex-wrap: wrap; gap: 20px; background: #f8fafc;
+            padding: 12px 16px; border-radius: 20px; margin-bottom: 16px; font-size: 0.95rem;
         }
-        .user-info span {
-            font-weight: 600;
-            color: #0f172a;
-        }
-        .stats-grid {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 16px;
-            margin-bottom: 24px;
-        }
+        .stats-grid { display: flex; flex-wrap: wrap; gap: 16px; margin-bottom: 24px; }
         .stat-card {
-            background: #f1f5f9;
-            border-radius: 20px;
-            padding: 12px 18px;
-            flex: 1 1 180px;
-            text-align: center;
+            background: #f1f5f9; border-radius: 20px; padding: 12px 18px;
+            flex: 1 1 180px; text-align: center;
         }
-        .stat-card .label {
-            font-size: 0.75rem;
-            text-transform: uppercase;
-            color: #475569;
-            letter-spacing: 0.5px;
-        }
-        .stat-card .value {
-            font-size: 1.8rem;
-            font-weight: 700;
-            color: #0f172a;
-            line-height: 1.2;
-        }
-        .stat-card .sub {
-            font-size: 0.7rem;
-            color: #3b82f6;
-        }
-        .progress-bar-bg {
-            background: #e2e8f0;
-            border-radius: 20px;
-            height: 8px;
-            width: 100%;
-            margin-top: 8px;
-        }
-        .progress-fill {
-            background: #3b82f6;
-            height: 8px;
-            border-radius: 20px;
-            width: 0%;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            overflow-x: auto;
-            display: block;
-        }
-        th, td {
-            padding: 12px 8px;
-            text-align: left;
-            border-bottom: 1px solid #e2e8f0;
-            font-size: 0.85rem;
-        }
-        th {
-            background: #f1f5f9;
-            position: sticky;
-            top: 0;
-            font-weight: 600;
-        }
-        .form-row {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-            margin-bottom: 16px;
-            align-items: flex-end;
-        }
-        .form-group {
-            flex: 1 1 150px;
-            min-width: 120px;
-        }
-        label {
-            font-size: 0.7rem;
-            font-weight: 600;
-            text-transform: uppercase;
-            color: #475569;
-            display: block;
-        }
-        input, select {
-            width: 100%;
-            padding: 8px 10px;
-            border-radius: 16px;
-            border: 1px solid #cbd5e1;
-            background: white;
-            font-size: 0.9rem;
-        }
+        .stat-card .label { font-size: 0.75rem; color: #475569; text-transform: uppercase; }
+        .stat-card .value { font-size: 1.8rem; font-weight: 700; color: #0f172a; }
+        .form-row { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 16px; align-items: flex-end; }
+        .form-group { flex: 1 1 150px; min-width: 120px; }
+        label { font-size: 0.7rem; font-weight: 600; text-transform: uppercase; color: #475569; }
+        input, select { width: 100%; padding: 8px 10px; border-radius: 16px; border: 1px solid #cbd5e1; font-size: 0.9rem; }
         button {
-            background: #3b82f6;
-            color: white;
-            border: none;
-            padding: 8px 20px;
-            border-radius: 40px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: 0.1s;
-            font-size: 0.85rem;
+            background: #3b82f6; color: white; border: none; padding: 8px 20px;
+            border-radius: 40px; font-weight: 600; cursor: pointer; font-size: 0.85rem;
         }
-        button:hover {
-            background: #2563eb;
+        button:hover { background: #2563eb; }
+        .btn-secondary { background: #64748b; }
+        .btn-secondary:hover { background: #475569; }
+        .btn-danger { background: #ef4444; }
+        .btn-danger:hover { background: #dc2626; }
+        .flex-between { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
+        .objective-tag { background: #e6f0ff; padding: 4px 12px; border-radius: 20px; font-size: 0.75rem; }
+        canvas { max-height: 250px; width: 100%; }
+        table { width: 100%; border-collapse: collapse; display: block; overflow-x: auto; }
+        th, td { padding: 12px 8px; text-align: left; border-bottom: 1px solid #e2e8f0; font-size: 0.85rem; }
+        th { background: #f1f5f9; }
+        .toast {
+            position: fixed; bottom: 20px; right: 20px; background: #1e293b; color: white;
+            padding: 10px 16px; border-radius: 30px; font-size: 0.85rem; z-index: 999;
+            opacity: 0; transition: 0.2s; pointer-events: none;
         }
-        .btn-secondary {
-            background: #64748b;
-        }
-        .btn-secondary:hover {
-            background: #475569;
-        }
-        .btn-danger {
-            background: #ef4444;
-        }
-        .btn-danger:hover {
-            background: #dc2626;
-        }
-        .flex-between {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 12px;
-        }
-        .objective-tag {
-            background: #e6f0ff;
-            padding: 4px 12px;
-            border-radius: 20px;
-            font-size: 0.75rem;
-            font-weight: 500;
-        }
-        canvas {
-            max-height: 250px;
-            width: 100%;
-        }
-        @media (max-width: 700px) {
-            .card {
-                padding: 16px;
-            }
-            th, td {
-                font-size: 0.7rem;
-                padding: 8px 4px;
-            }
-        }
-        .note-text {
-            font-size: 0.75rem;
-            color: #334155;
-        }
+        .toast.show { opacity: 1; }
     </style>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 </head>
 <body>
 <div class="container">
     <div class="card">
-        <h1>
-            📈 Seguimiento 1 año - Fuerza + Masa
-            <span class="badge">Principiante · 30 años · 182cm · 70kg</span>
+        <h1>📈 Seguimiento 1 año - Fuerza + Masa
+            <span class="badge">30 años · 182cm · 70kg</span>
         </h1>
         <div class="user-info">
-            <div>📅 Inicio: 70 kg | 🎯 1 año: 78-82 kg (12-14% grasa)</div>
-            <div>🏋️ Fase actual: <strong>Fase 1 · Hipertrofia base (meses 1-4)</strong></div>
+            <div>📅 Inicio: 70 kg | 🎯 1 año: 78-82 kg</div>
+            <div>🏋️ Fase actual: <strong>Fase 1 · Hipertrofia base</strong></div>
+            <div id="storageStatus" style="color: green;">✅ localStorage activo</div>
         </div>
-
-        <!-- Resumen rápido de último registro -->
         <div class="stats-grid" id="lastStats">
             <div class="stat-card">📊 <div class="label">Último peso</div><div class="value" id="lastWeight">--</div><div class="sub">kg</div></div>
             <div class="stat-card">📏 <div class="label">Última cintura</div><div class="value" id="lastWaist">--</div><div class="sub">cm</div></div>
@@ -228,11 +87,10 @@
         </div>
     </div>
 
-    <!-- Formulario para nuevo registro semanal -->
     <div class="card">
         <h2>➕ Nuevo registro semanal</h2>
         <div class="form-row">
-            <div class="form-group"><label>📅 Fecha</label><input type="date" id="logDate" value=""></div>
+            <div class="form-group"><label>📅 Fecha</label><input type="date" id="logDate"></div>
             <div class="form-group"><label>⚖️ Peso (kg)</label><input type="number" step="0.1" id="weight" placeholder="70.0"></div>
             <div class="form-group"><label>📏 Cintura (cm)</label><input type="number" step="0.5" id="waist" placeholder="80"></div>
             <div class="form-group"><label>💪 Bíceps (cm)</label><input type="number" step="0.5" id="biceps" placeholder="32"></div>
@@ -244,40 +102,36 @@
             <div class="form-group"><label>🏋️ Peso muerto (kg x reps)</label><input type="text" id="deadlift" placeholder="ej: 50x8"></div>
             <div class="form-group"><label>🏋️ Press banca (kg x reps)</label><input type="text" id="bench" placeholder="20x10"></div>
             <div class="form-group"><label>🤸 Dominadas (reps)</label><input type="number" id="pullups" placeholder="3"></div>
-            <div class="form-group"><label>🏋️ Remo con barra (kg x reps)</label><input type="text" id="row" placeholder="50x10"></div>
+            <div class="form-group"><label>🏋️ Remo (kg x reps)</label><input type="text" id="row" placeholder="50x10"></div>
         </div>
         <div class="form-row">
-            <div class="form-group"><label>📝 Notas / sensaciones</label><input type="text" id="notes" placeholder="Ej: buen bombeo, sueño normal"></div>
+            <div class="form-group"><label>📝 Notas / sensaciones</label><input type="text" id="notes" placeholder="Ej: buen bombeo"></div>
             <div class="form-group"><label>💤 Energía (1-5)</label><input type="number" step="1" min="1" max="5" id="energy" placeholder="3"></div>
-            <div style="display: flex; gap: 8px; align-items: center;">
+            <div style="display: flex; gap: 8px;">
                 <button id="saveBtn">💾 Guardar registro</button>
-                <button id="clearAllBtn" class="btn-secondary" type="button">🗑️ Borrar todos</button>
+                <button id="exportBtn" class="btn-secondary" type="button">📤 Exportar JSON</button>
+                <button id="importBtn" class="btn-secondary" type="button">📥 Importar JSON</button>
+                <button id="clearAllBtn" class="btn-secondary" type="button">🗑️ Borrar todo</button>
             </div>
         </div>
-        <div class="note-text">* Los datos se guardan en tu navegador. Registra cada semana para ver tu evolución.</div>
+        <input type="file" id="importFile" accept=".json" style="display: none;">
+        <div class="note-text">* Los datos se guardan en tu navegador. Usa Exportar/Importar para respaldo.</div>
     </div>
 
-    <!-- Gráfico de peso -->
     <div class="card">
         <h2>📉 Evolución del peso corporal</h2>
-        <canvas id="weightChart" width="400" height="200" style="max-height: 250px;"></canvas>
-        <div class="flex-between" style="margin-top: 12px;">
-            <div><span class="objective-tag">🎯 Objetivo año: 78-82 kg</span></div>
-            <div><span class="objective-tag">⭐ Meta fase 1 (mes4): +4~6 kg</span></div>
-        </div>
+        <canvas id="weightChart" width="400" height="200"></canvas>
     </div>
 
-    <!-- Tabla de objetivos por fase -->
     <div class="card">
         <h2>🎯 Objetivos clave por macrociclo</h2>
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px,1fr)); gap: 16px;">
-            <div><strong>🔵 Fase 1 (mes 4)</strong><br>Peso: 75-77 kg<br>Sentadilla: 70-80kg x8<br>Press banca: 40-50kg x8<br>Dominadas: 6-8 limpias<br>Remo: 65kg x8<br>Cintura: ≤ 82 cm</div>
-            <div><strong>🟠 Fase 2 (mes 8)</strong><br>Peso: 79-81 kg<br>Sentadilla: 90-100kg x5-6<br>Press banca: 60-70kg x5<br>Dominadas: 8-10 + lastre 5kg<br>Peso muerto: 80-100kg x5</div>
-            <div><strong>🟢 Fase 3 (mes 12)</strong><br>Peso: 78-82 kg (más definido)<br>% grasa: 11-13%<br>Press banca: 70-80kg x5<br>Dominadas: 10-12 limpias<br>Marcas abdominales visibles</div>
+            <div><strong>🔵 Fase 1 (mes 4)</strong><br>Peso: 75-77 kg<br>Sentadilla: 70-80kg x8<br>Press banca: 40-50kg x8<br>Dominadas: 6-8</div>
+            <div><strong>🟠 Fase 2 (mes 8)</strong><br>Peso: 79-81 kg<br>Sentadilla: 90-100kg x5<br>Press banca: 60-70kg x5<br>Dominadas: 8-10 + lastre</div>
+            <div><strong>🟢 Fase 3 (mes 12)</strong><br>Peso: 78-82 kg<br>% grasa: 11-13%<br>Press banca: 70-80kg<br>Abdominales visibles</div>
         </div>
     </div>
 
-    <!-- Historial de registros -->
     <div class="card">
         <div class="flex-between">
             <h2>📋 Historial de seguimiento</h2>
@@ -285,32 +139,54 @@
         </div>
         <div style="overflow-x: auto;">
             <table id="logTable">
-                <thead>
-                    <tr><th>Fecha</th><th>Peso</th><th>Cintura</th><th>Bíceps</th><th>Pecho</th><th>Sentadilla</th><th>Press banca</th><th>Dominadas</th><th>Notas</th><th></th></tr>
-                </thead>
-                <tbody id="logTableBody">
-                    <tr><td colspan="10" style="text-align:center;">No hay registros aún. Agrega tu primera semana.</td></tr>
-                </tbody>
+                <thead><tr><th>Fecha</th><th>Peso</th><th>Cintura</th><th>Bíceps</th><th>Pecho</th><th>Sentadilla</th><th>Press banca</th><th>Dominadas</th><th>Notas</th><th></th></tr></thead>
+                <tbody id="logTableBody"><tr><td colspan="10" style="text-align:center;">No hay registros aún</td></tr></tbody>
             </table>
         </div>
     </div>
 </div>
+<div id="toast" class="toast"></div>
 
 <script>
-    // ---------- VARIABLES GLOBALES ----------
-    let logs = [];           // array de objetos
+    let logs = [];
     let weightChart = null;
 
-    // ---------- CARGAR DATOS DE LOCALSTORAGE ----------
+    function showToast(msg, isError = false) {
+        const toast = document.getElementById('toast');
+        toast.textContent = msg;
+        toast.style.background = isError ? '#dc2626' : '#1e293b';
+        toast.classList.add('show');
+        setTimeout(() => toast.classList.remove('show'), 2500);
+    }
+
+    function testLocalStorage() {
+        try {
+            localStorage.setItem('test', 'ok');
+            localStorage.removeItem('test');
+            document.getElementById('storageStatus').innerHTML = '✅ localStorage activo';
+            return true;
+        } catch(e) {
+            document.getElementById('storageStatus').innerHTML = '❌ localStorage no disponible (modo incógnito o bloqueado)';
+            showToast('⚠️ El navegador no permite guardar datos. Usa Exportar/Importar manualmente.', true);
+            return false;
+        }
+    }
+
+    function saveLogs() {
+        if(!testLocalStorage()) return false;
+        localStorage.setItem("fitnessLogs", JSON.stringify(logs));
+        showToast('Datos guardados correctamente');
+        loadLogs(); // refresca
+        return true;
+    }
+
     function loadLogs() {
         const stored = localStorage.getItem("fitnessLogs");
         if(stored) {
             logs = JSON.parse(stored);
         } else {
             logs = [];
-            // dato demo opcional: agregamos un ejemplo para que veas formato? mejor vacío.
         }
-        // ordenar por fecha descendente para tabla, pero ascendente para gráfico
         logs.sort((a,b) => new Date(a.date) - new Date(b.date));
         renderTable();
         updateSummaryStats();
@@ -318,12 +194,6 @@
         updateRowCount();
     }
 
-    function saveLogs() {
-        localStorage.setItem("fitnessLogs", JSON.stringify(logs));
-        loadLogs(); // refresca todo
-    }
-
-    // Renderizar tabla
     function renderTable() {
         const tbody = document.getElementById('logTableBody');
         if(!logs.length) {
@@ -331,46 +201,40 @@
             return;
         }
         let html = '';
-        // mostrar más reciente arriba (fecha descendente)
-        const reversed = [...logs].reverse();
-        for(let log of reversed) {
+        [...logs].reverse().forEach(log => {
             html += `<tr>
-                <td>${log.date || ''}</td>
+                <td>${log.date}</td>
                 <td>${log.weight} kg</td>
-                <td>${log.waist} cm</td>
-                <td>${log.biceps} cm</td>
-                <td>${log.chest ? log.chest + ' cm' : '-'}</td>
-                <td>${log.squat || '-'}</td>
-                <td>${log.bench || '-'}</td>
-                <td>${log.pullups ?? '-'}</td>
-                <td style="max-width:150px; overflow:auto;">${log.notes || ''} ${log.energy ? '⚡'+log.energy : ''}</td>
-                <td><button class="btn-danger" onclick="deleteLog('${log.date}')" style="padding:4px 8px; font-size:0.7rem;">🗑️</button></td>
+                <td>${log.waist || '—'} cm</td>
+                <td>${log.biceps || '—'} cm</td>
+                <td>${log.chest || '—'} cm</td>
+                <td>${log.squat || '—'}</td>
+                <td>${log.bench || '—'}</td>
+                <td>${log.pullups ?? '—'}</td>
+                <td>${log.notes || ''} ${log.energy ? '⚡'+log.energy : ''}</td>
+                <td><button class="btn-danger" onclick="deleteLog('${log.date}')" style="padding:4px 8px;">🗑️</button></td>
             </tr>`;
-        }
+        });
         tbody.innerHTML = html;
     }
 
-    function deleteLog(date) {
+    window.deleteLog = function(date) {
         if(confirm(`¿Eliminar registro del ${date}?`)) {
             logs = logs.filter(l => l.date !== date);
             saveLogs();
         }
-    }
+    };
 
     function updateSummaryStats() {
         if(!logs.length) {
-            document.getElementById('lastWeight').innerText = '--';
-            document.getElementById('lastWaist').innerText = '--';
-            document.getElementById('lastBiceps').innerText = '--';
-            document.getElementById('lastBench').innerText = '--';
-            document.getElementById('lastPullups').innerText = '--';
+            ['lastWeight','lastWaist','lastBiceps','lastBench','lastPullups'].forEach(id => document.getElementById(id).innerText = '--');
             return;
         }
         const last = logs[logs.length-1];
         document.getElementById('lastWeight').innerText = last.weight;
         document.getElementById('lastWaist').innerText = last.waist || '--';
         document.getElementById('lastBiceps').innerText = last.biceps || '--';
-        document.getElementById('lastBench').innerText = last.bench ? last.bench : '--';
+        document.getElementById('lastBench').innerText = last.bench || '--';
         document.getElementById('lastPullups').innerText = (last.pullups !== undefined && last.pullups !== null) ? last.pullups : '--';
     }
 
@@ -381,102 +245,103 @@
         if(weightChart) weightChart.destroy();
         weightChart = new Chart(ctx, {
             type: 'line',
-            data: {
-                labels: dates,
-                datasets: [{
-                    label: 'Peso (kg)',
-                    data: weights,
-                    borderColor: '#3b82f6',
-                    backgroundColor: 'rgba(59,130,246,0.1)',
-                    tension: 0.2,
-                    fill: true,
-                    pointBackgroundColor: '#3b82f6'
-                }]
-            },
-            options: {
-                responsive: true,
-                maintainAspectRatio: true,
-                plugins: {
-                    tooltip: { callbacks: { label: (ctx) => `${ctx.raw} kg` } }
-                }
-            }
+            data: { labels: dates, datasets: [{ label: 'Peso (kg)', data: weights, borderColor: '#3b82f6', fill: true, tension: 0.2 }] },
+            options: { responsive: true, maintainAspectRatio: true }
         });
     }
 
     function updateRowCount() {
-        document.getElementById('rowCount').innerText = logs.length + (logs.length===1 ? ' registro' : ' registros');
+        document.getElementById('rowCount').innerText = logs.length + (logs.length === 1 ? ' registro' : ' registros');
     }
 
-    // Guardar nuevo registro desde formulario
     function addLogFromForm() {
         const date = document.getElementById('logDate').value;
-        if(!date) {
-            alert("Selecciona una fecha para el registro");
-            return;
-        }
+        if(!date) { showToast('Selecciona una fecha', true); return; }
         const weight = parseFloat(document.getElementById('weight').value);
-        if(isNaN(weight)) {
-            alert("Ingresa un peso válido");
-            return;
-        }
-        const waist = parseFloat(document.getElementById('waist').value) || null;
-        const biceps = parseFloat(document.getElementById('biceps').value) || null;
-        const chest = parseFloat(document.getElementById('chest').value) || null;
-        const thigh = parseFloat(document.getElementById('thigh').value) || null;
-        const squat = document.getElementById('squat').value || "";
-        const deadlift = document.getElementById('deadlift').value || "";
-        const bench = document.getElementById('bench').value || "";
-        const pullups = parseInt(document.getElementById('pullups').value);
-        const row = document.getElementById('row').value || "";
-        const notes = document.getElementById('notes').value || "";
-        const energy = parseInt(document.getElementById('energy').value) || null;
-
-        // validar que no haya duplicado de fecha
-        if(logs.some(l => l.date === date)) {
-            if(confirm(`Ya existe un registro para el ${date}. ¿Sobrescribirlo?`)) {
-                logs = logs.filter(l => l.date !== date);
-            } else {
-                return;
-            }
-        }
+        if(isNaN(weight)) { showToast('Ingresa un peso válido', true); return; }
 
         const newLog = {
-            date, weight, waist, biceps, chest, thigh,
-            squat, deadlift, bench, pullups: isNaN(pullups) ? null : pullups,
-            row, notes, energy
+            date, weight,
+            waist: parseFloat(document.getElementById('waist').value) || null,
+            biceps: parseFloat(document.getElementById('biceps').value) || null,
+            chest: parseFloat(document.getElementById('chest').value) || null,
+            thigh: parseFloat(document.getElementById('thigh').value) || null,
+            squat: document.getElementById('squat').value || '',
+            deadlift: document.getElementById('deadlift').value || '',
+            bench: document.getElementById('bench').value || '',
+            pullups: document.getElementById('pullups').value ? parseInt(document.getElementById('pullups').value) : null,
+            row: document.getElementById('row').value || '',
+            notes: document.getElementById('notes').value || '',
+            energy: document.getElementById('energy').value ? parseInt(document.getElementById('energy').value) : null
         };
+
+        // Sobrescribir si existe misma fecha
+        const existingIndex = logs.findIndex(l => l.date === date);
+        if(existingIndex !== -1) {
+            if(confirm(`Ya existe registro para ${date}. ¿Sobrescribir?`)) logs.splice(existingIndex, 1);
+            else return;
+        }
         logs.push(newLog);
         logs.sort((a,b) => new Date(a.date) - new Date(b.date));
-        saveLogs();
-        // limpiar algunos campos pero mantener fecha para siguiente semana
-        document.getElementById('weight').value = '';
-        document.getElementById('waist').value = '';
-        document.getElementById('biceps').value = '';
-        document.getElementById('chest').value = '';
-        document.getElementById('thigh').value = '';
-        document.getElementById('squat').value = '';
-        document.getElementById('deadlift').value = '';
-        document.getElementById('bench').value = '';
-        document.getElementById('pullups').value = '';
-        document.getElementById('row').value = '';
-        document.getElementById('notes').value = '';
-        document.getElementById('energy').value = '';
-        // sugerencia de fecha siguiente semana
-        const nextDate = new Date(date);
-        nextDate.setDate(nextDate.getDate() + 7);
-        document.getElementById('logDate').value = nextDate.toISOString().split('T')[0];
+        if(saveLogs()) {
+            // limpiar formulario pero mantener fecha sugerida
+            document.getElementById('weight').value = '';
+            document.getElementById('waist').value = '';
+            document.getElementById('biceps').value = '';
+            document.getElementById('chest').value = '';
+            document.getElementById('thigh').value = '';
+            document.getElementById('squat').value = '';
+            document.getElementById('deadlift').value = '';
+            document.getElementById('bench').value = '';
+            document.getElementById('pullups').value = '';
+            document.getElementById('row').value = '';
+            document.getElementById('notes').value = '';
+            document.getElementById('energy').value = '';
+            // sugerir siguiente semana
+            const next = new Date(date);
+            next.setDate(next.getDate() + 7);
+            document.getElementById('logDate').value = next.toISOString().split('T')[0];
+        }
     }
 
-    function clearAllData() {
-        if(confirm("⚠️ Eliminar TODOS los registros de seguimiento? Esta acción no se puede deshacer.")) {
+    function exportToJSON() {
+        const dataStr = JSON.stringify(logs, null, 2);
+        const blob = new Blob([dataStr], {type: 'application/json'});
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `seguimiento_${new Date().toISOString().slice(0,10)}.json`;
+        a.click();
+        URL.revokeObjectURL(url);
+        showToast('Exportado correctamente');
+    }
+
+    function importFromJSON(file) {
+        const reader = new FileReader();
+        reader.onload = function(e) {
+            try {
+                const imported = JSON.parse(e.target.result);
+                if(Array.isArray(imported)) {
+                    logs = imported;
+                    saveLogs();
+                    showToast(`Importados ${logs.length} registros`);
+                } else throw new Error();
+            } catch(err) {
+                showToast('Archivo inválido', true);
+            }
+        };
+        reader.readAsText(file);
+    }
+
+    function clearAll() {
+        if(confirm('⚠️ Eliminar TODOS los registros? No se puede deshacer.')) {
             logs = [];
             saveLogs();
         }
     }
 
-    // poner fecha por defecto hoy o última+7d
     function setDefaultDate() {
-        if(logs.length > 0) {
+        if(logs.length) {
             const lastDate = new Date(logs[logs.length-1].date);
             if(!isNaN(lastDate)) {
                 const next = new Date(lastDate);
@@ -485,14 +350,20 @@
                 return;
             }
         }
-        const today = new Date().toISOString().split('T')[0];
-        document.getElementById('logDate').value = today;
+        document.getElementById('logDate').value = new Date().toISOString().split('T')[0];
     }
 
-    // inicializar eventos
+    // Eventos
     document.getElementById('saveBtn').addEventListener('click', addLogFromForm);
-    document.getElementById('clearAllBtn').addEventListener('click', clearAllData);
-    
+    document.getElementById('exportBtn').addEventListener('click', exportToJSON);
+    document.getElementById('clearAllBtn').addEventListener('click', clearAll);
+    document.getElementById('importBtn').addEventListener('click', () => document.getElementById('importFile').click());
+    document.getElementById('importFile').addEventListener('change', (e) => {
+        if(e.target.files.length) importFromJSON(e.target.files[0]);
+        e.target.value = '';
+    });
+
+    testLocalStorage();
     loadLogs();
     setDefaultDate();
 </script>
